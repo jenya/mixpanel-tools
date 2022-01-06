@@ -199,7 +199,7 @@ class MixpanelTool {
   }
 
   getProperties(dataParam) {
-    return JSON.parse(atob(decodeURIComponent(dataParam)));
+    return JSON.parse(decodeURIComponent(dataParam));
   }
 
   addRequest(mixpanelRequest) {
